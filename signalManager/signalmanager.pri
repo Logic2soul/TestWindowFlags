@@ -1,5 +1,7 @@
+INCLUDEPATH += $$PWD
+
 HEADERS += \
-		$$PWD/signalmanager.h
+        $$PWD/signalmanager.h
 
 SOURCES += \
-		$$PWD/signalmanaget.cpp
+        $$PWD/signalmanager.cpp

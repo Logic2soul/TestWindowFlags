@@ -1,3 +1,5 @@
+INCLUDEPATH += $$PWD
+
 HEADERS += \
         $$PWD/testcontrollerwindow.h \
         $$PWD/testpreviewwindow.h \

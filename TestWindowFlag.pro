@@ -11,10 +11,12 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = TestWindowFlag
 TEMPLATE = app
 
+include("./worker/worker.pri")
 include("./utils/utils.pri")
 include("./cutelogger/cutelogger.pri")
 include("./uiWidget/uiWidget.pri")
-include("./signalmanager/signalmanager.pri")
+include("./signalManager/signalmanager.pri")
+include("./controller/controller.pri")
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which as been marked as deprecated (the exact warnings

@@ -14,6 +14,8 @@ public:
 
 signals:
     //V-C signal:
+    void updatePreviewWindow();
+
     void actionRunCmd(const QString &cmd);
 
     void actionRestartAll();
@@ -31,10 +33,10 @@ signals:
 public slots:
 
 private:
-    explicit SignalManager(QObject *parent = 0);
-    ~SignalManager();
-    SignalManager(const SignalManager &s);
-    SignalManager & operator=(const SignalManager &s);
+    explicit SignalManager(QObject *parent = 0){Q_UNUSED(parent);}
+    ~SignalManager(){}
+    SignalManager(const SignalManager &s){}
+    SignalManager & operator=(const SignalManager &s){}
 };
 
 #endif // SIGNALMANAGER_H
